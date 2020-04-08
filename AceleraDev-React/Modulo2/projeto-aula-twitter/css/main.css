@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 19px;
+}
+
+:root {
+  --main-blue: rgb(29, 161, 242);
+  --main-blue-light: rgba(29, 161, 242, 0.2);
+  --main-white: white;
+  --main-gray: rgb(101, 119, 134);
+  --main-gray-light: rgb(245, 248, 250);
+}
+
+.margin {
+  margin: 5px;
+}
+
+.margin--negative {
+  margin-right: -5px;
+  margin-left: -5px;
+}
+
+.tweets {
+  margin: 0 auto;
+  border: 1px solid rgb(230, 236, 240);
+  width: 600px;
+}
+
+.container {
+  padding: 5px 15px;
+  border-top: 1px solid rgb(230, 236, 240);
+}
+
+.container:hover {
+  background-color: var(--main-gray-light);
+}
+
+.container--no-hover:hover {
+  background-color: var(--main-white);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 53px;
+}
+
+.header__title {
+  font-weight: bold;
+}
+
+.header__icon {
+  font-size: 15px;
+  color: var(--main-blue);
+}
+
+.user__image {
+  height: 50px;
+  width: 50px;
+}
+
+.user__image > img {
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+}
+
+.post {
+  display: flex;
+}
+
+.post__image {
+}
+
+.post__form {
+  flex: 1;
+}
+
+.post__buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.input input {
+  width: 100%;
+  height: 50px;
+  padding: 10px 0px;
+  font-size: 19px;
+  border: none;
+}
+
+.input input:focus {
+  outline: none;
+}
+
+.button {
+  border: none;
+  border-radius: 20px;
+  padding: 10px 15px;
+  font-size: 15px;
+}
+
+.button--tweet {
+  background-color: var(--main-blue);
+  color: var(--main-white);
+  opacity: 0.5;
+}
+
+.icon {
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.icon:hover {
+  background-color: var(--main-blue-light);
+  color: var(--main-blue);
+  border-radius: 100%;
+}
+
+.icon--tweet {
+  color: var(--main-gray);
+}
+
+.icon--post-tweet {
+  padding: 10px;
+  color: var(--main-blue);
+}
+
+.tweet {
+  display: flex;
+}
+
+.tweet__container {
+  flex: 1;
+}
+
+.tweet__buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.tweet__icon-number {
+  font-size: 13px;
+}
+
+.tweet__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tweet__header-title {
+  font-size: 15px;
+  font-weight: bold;
+}
